@@ -1,0 +1,16 @@
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\WCFHost.exe.config
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\WCFHost.exe
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\WCFHost.pdb
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\WCFInsertInventoryService.dll
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\BusinessObject.dll
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\DataAccess.dll
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\WCFInsertInventoryService.pdb
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\WCFInsertInventoryService.dll.config
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\BusinessObject.pdb
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\bin\Debug\DataAccess.pdb
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\obj\Debug\WCFHost.csproj.AssemblyReference.cache
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\obj\Debug\WCFHost.csproj.SuggestedBindingRedirects.cache
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\obj\Debug\WCFHost.csproj.CoreCompileInputs.cache
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\obj\Debug\WCFHost.csproj.CopyComplete
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\obj\Debug\WCFHost.exe
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\WCFHost\obj\Debug\WCFHost.pdb

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="WCFInsertService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IWCFInsertService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/Temporary_Listen_addresses/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/Temporary_Listen_addresses/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Temporary_Listen_addresses/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BusinessObject" />
+      <xsd:import schemaLocation="http://localhost/Temporary_Listen_addresses/?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFInsertService_InsertNewSalesman_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewSalesman" />
+  </wsdl:message>
+  <wsdl:message name="IWCFInsertService_InsertNewSalesman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewSalesmanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFInsertService_InsertNewOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWCFInsertService_InsertNewOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFInsertService_InsertNewCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IWCFInsertService_InsertNewCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNewCustomerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFInsertService">
+    <wsdl:operation name="InsertNewSalesman">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFInsertService/InsertNewSalesman" message="tns:IWCFInsertService_InsertNewSalesman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFInsertService/InsertNewSalesmanResponse" message="tns:IWCFInsertService_InsertNewSalesman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFInsertService/InsertNewOrder" message="tns:IWCFInsertService_InsertNewOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFInsertService/InsertNewOrderResponse" message="tns:IWCFInsertService_InsertNewOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFInsertService/InsertNewCustomer" message="tns:IWCFInsertService_InsertNewCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFInsertService/InsertNewCustomerResponse" message="tns:IWCFInsertService_InsertNewCustomer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWCFInsertService" type="tns:IWCFInsertService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertNewSalesman">
+      <soap:operation soapAction="http://tempuri.org/IWCFInsertService/InsertNewSalesman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewOrder">
+      <soap:operation soapAction="http://tempuri.org/IWCFInsertService/InsertNewOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewCustomer">
+      <soap:operation soapAction="http://tempuri.org/IWCFInsertService/InsertNewCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IWCFInsertService" type="tns:IWCFInsertService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IWCFInsertService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="InsertNewSalesman">
+      <soap12:operation soapAction="http://tempuri.org/IWCFInsertService/InsertNewSalesman" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewOrder">
+      <soap12:operation soapAction="http://tempuri.org/IWCFInsertService/InsertNewOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNewCustomer">
+      <soap12:operation soapAction="http://tempuri.org/IWCFInsertService/InsertNewCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WCFInsertService">
+    <wsdl:port name="BasicHttpBinding_IWCFInsertService" binding="tns:BasicHttpBinding_IWCFInsertService">
+      <soap:address location="http://localhost/Temporary_Listen_addresses/WCFInsertService" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_IWCFInsertService" binding="tns:NetTcpBinding_IWCFInsertService">
+      <soap12:address location="net.tcp://localhost:90/Temporary_Listen_addresses/WCFInsertService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:90/Temporary_Listen_addresses/WCFInsertService</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>DESKTOP-5H6RLHG\darsh</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="be2985f4-0912-4e05-873d-a8d112f85466" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:80/Temporary_Listen_addresses/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFInsertService.wsdl" MetadataType="Wsdl" ID="6f1fc1f5-df30-4751-ba6f-1a173871cabc" SourceId="1" SourceUrl="http://localhost/Temporary_Listen_addresses/?wsdl" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="d7130f7e-843d-463b-84f2-06857b0841c9" SourceId="1" SourceUrl="http://localhost/Temporary_Listen_addresses/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="fe934cab-a3ec-488e-9fc8-8b39667bee61" SourceId="1" SourceUrl="http://localhost/Temporary_Listen_addresses/?xsd=xsd3" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="ad0f28f9-4aa7-4a09-86e8-93e80f2289cf" SourceId="1" SourceUrl="http://localhost/Temporary_Listen_addresses/?xsd=xsd0" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="1482234c-8b64-475a-8e41-de01dd32c7e6" SourceId="1" SourceUrl="http://localhost/Temporary_Listen_addresses/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="6d4b4898-371a-40dd-be0e-52a8388c6f06" SourceId="1" SourceUrl="http://localhost/Temporary_Listen_addresses/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

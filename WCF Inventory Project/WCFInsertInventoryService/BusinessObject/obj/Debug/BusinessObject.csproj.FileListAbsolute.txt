@@ -1,0 +1,6 @@
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\BusinessObject\bin\Debug\BusinessObject.dll
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\BusinessObject\bin\Debug\BusinessObject.pdb
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\BusinessObject\obj\Debug\BusinessObject.csproj.AssemblyReference.cache
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\BusinessObject\obj\Debug\BusinessObject.csproj.CoreCompileInputs.cache
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\BusinessObject\obj\Debug\BusinessObject.dll
+D:\Learn\SQL and CSharp\WCF and Web service\WCF Inventory Project\WCFInsertInventoryService\BusinessObject\obj\Debug\BusinessObject.pdb
